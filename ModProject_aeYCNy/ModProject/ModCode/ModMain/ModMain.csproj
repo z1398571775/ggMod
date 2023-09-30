@@ -32,6 +32,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Example\Example.cs" />
+    <Compile Include="form\CreateFeatureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\CreateFeatureForm.Designer.cs">
+      <DependentUpon>CreateFeatureForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -675,6 +681,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="form\CreateFeatureForm.resx">
+      <DependentUpon>CreateFeatureForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

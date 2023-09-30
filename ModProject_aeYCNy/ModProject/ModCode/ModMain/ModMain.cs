@@ -56,13 +56,10 @@ namespace MOD_aeYCNy
         {
             if (Input.GetKeyDown(KeyCode.T)) {
 
-                if (userControl1 == null) 
-                {
-                    userControl1 = new Form1();
-                    userControl1.Text = "首页";
-                }
                 
-                userControl1.Show();
+                userControl1 = new Form1();
+                userControl1.Text = "首页";
+                userControl1.ShowDialog();
                 
 
 

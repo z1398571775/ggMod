@@ -22,5 +22,17 @@ namespace MOD_aeYCNy.form
             ItemForm itemForm = new ItemForm();
             itemForm.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CreateFeatureForm createFeatureForm = new CreateFeatureForm();
+            createFeatureForm.ShowDialog();
+        }
+
+        private void npcFormBtn_Click(object sender, EventArgs e)
+        {
+            NpcForm npcForm = new NpcForm();
+            npcForm.ShowDialog();
+        }
     }
 }
